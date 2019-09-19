@@ -1,0 +1,55 @@
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/loadingscreen";
+
+
+
+
+@import "pages/home";
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   /* box-sizing: border-box; force actual height = height actual wedth = width   */
+   box-sizing: inherit;
+   /* Box-sizing is not an inherited value by default and therefore we need to explicitly set it if we want to use it for all elements. The border-box value is set in the body already */
+}
+
+html{
+   // this defines what 1 rem is in the entire css cascade
+   font-size: 62.5%; // 1 rem == 10px
+   /* It is good practice to set the default html font size to a percentage since there is people who have set their default dont size to something bigger ( bad sight), and therefore using a relative measurement here we can make the entirepage ( since we are basing size on REM ) relative to the user specific needs */
+}
+
+body {
+ box-sizing: border-box;
+ overflow:hidden; 
+ 
+}
+
+.lerp-static{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top:0px;
+   left:0px;
+   overflow: hidden; 
+} 
+
+

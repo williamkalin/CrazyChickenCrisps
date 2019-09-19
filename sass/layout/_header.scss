@@ -1,0 +1,31 @@
+
+
+
+.header {
+
+   height: 50vh;
+
+   &__maintitle{
+      font-size: 7rem;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      -webkit-text-fill-color: red;
+      // background-image: linear-gradient(to right, blue,blue);
+
+      // -webkit-background-clip: text;
+      // // this clips the image to the text
+      // color:transparent;
+
+   *{
+      line-height: .7;
+      letter-spacing: -3px;
+   }
+
+
+   }
+
+
+
+}

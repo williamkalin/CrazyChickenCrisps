@@ -1,0 +1,112 @@
+::selection {
+  background-color: #f8f800;
+  color: #fff; }
+
+@keyframes loadingscreen-animation {
+  0% {
+    transform: scale(0);
+    opacity: 1; }
+  50% {
+    transform: scale(1.2);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
+@font-face {
+  font-family: Sugarpunch;
+  src: url("../resources/Sugarpunch.otf"); }
+
+@font-face {
+  font-family: Badaboom;
+  src: url("../resources/Badaboom.ttf"); }
+
+@font-face {
+  font-family: UnicornPop;
+  src: url("../resources/UnicornPop.ttf"); }
+
+h1, h2, h3, h4 {
+  font-family: UnicornPop;
+  color: black;
+  -webkit-text-fill-color: transparent;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black; }
+
+.header {
+  height: 50vh; }
+  .header__maintitle {
+    font-size: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    -webkit-text-fill-color: red; }
+    .header__maintitle * {
+      line-height: .7;
+      letter-spacing: -3px; }
+
+.loadingscreen {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  overflow: hidden;
+  background-color: #f8c800; }
+  .loadingscreen__svgs {
+    width: 80rem;
+    height: 80rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .loadingscreen__svgs__svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0; }
+      .loadingscreen__svgs__svg-1 {
+        z-index: 5;
+        animation: loadingscreen-animation .9s ease-out forwards; }
+      .loadingscreen__svgs__svg-2 {
+        z-index: 4;
+        animation: loadingscreen-animation .9s ease-out .3s forwards; }
+      .loadingscreen__svgs__svg-3 {
+        z-index: 3;
+        animation: loadingscreen-animation .9s ease-out .6s forwards; }
+      .loadingscreen__svgs__svg-4 {
+        z-index: 2;
+        animation: loadingscreen-animation .7s ease-out .9s forwards; }
+      .loadingscreen__svgs__svg-5 {
+        z-index: 1;
+        animation: loadingscreen-animation .6s ease-out 1.2s forwards; }
+
+section {
+  height: 50vh; }
+  section:nth-child(even) {
+    background-color: #f8c800; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; force actual height = height actual wedth = width   */
+  box-sizing: inherit;
+  /* Box-sizing is not an inherited value by default and therefore we need to explicitly set it if we want to use it for all elements. The border-box value is set in the body already */ }
+
+html {
+  font-size: 62.5%;
+  /* It is good practice to set the default html font size to a percentage since there is people who have set their default dont size to something bigger ( bad sight), and therefore using a relative measurement here we can make the entirepage ( since we are basing size on REM ) relative to the user specific needs */ }
+
+body {
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.lerp-static {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden; }

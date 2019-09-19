@@ -1,0 +1,12 @@
+
+section{
+
+   height: 50vh;
+
+   &:nth-child(even){
+
+      background-color: $color-primary-2;
+   }
+
+
+}

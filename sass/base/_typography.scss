@@ -1,0 +1,30 @@
+@font-face{
+   font-family: Sugarpunch;
+   src:url("../resources/Sugarpunch.otf");
+ 
+ }
+
+ @font-face{
+  font-family: Badaboom;
+  src:url("../resources/Badaboom.ttf");
+
+}
+
+@font-face{
+  font-family: UnicornPop;
+  src:url("../resources/UnicornPop.ttf");
+
+}
+ 
+ 
+
+
+ h1,h2,h3,h4{
+   font-family: UnicornPop;
+   color:black;
+   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: black;
+ }
+
+

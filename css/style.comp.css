@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Sugarpunch;
+  src: url("../resources/Sugarpunch.otf"); }
+
+
+  @font-face {
+    font-family: Badaboom;
+    src: url("../resources/Badaboom.ttf");}
+
+h1, h2, h3, h4 {
+  font-family: Sugarpunch; }
+
+h1.maintitle {
+  font-size: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  h1.maintitle * {
+    line-height: 1; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; force actual height = height actual wedth = width   */
+  box-sizing: inherit;
+  /* Box-sizing is not an inherited value by default and therefore we need to explicitly set it if we want to use it for all elements. The border-box value is set in the body already */ }
+
+html {
+  font-size: 62.5%;
+  /* It is good practice to set the default html font size to a percentage since there is people who have set their default dont size to something bigger ( bad sight), and therefore using a relative measurement here we can make the entirepage ( since we are basing size on REM ) relative to the user specific needs */ }
+
+body {
+  box-sizing: border-box; }
