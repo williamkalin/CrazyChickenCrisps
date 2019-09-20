@@ -16,3 +16,36 @@
    }
 
 }
+
+
+@keyframes pulsate{
+
+   0%{
+      transform: scale(.925);
+   }
+
+   50%{
+      transform: scale(1.025);
+   }
+
+   100%{
+      transform: scale(.925);
+   }
+
+}
+
+@keyframes upanddown-chicken{
+
+   0%{
+      transform: translate(-50%,-47%);
+   }
+
+   50%{
+      transform: translate(-50%,-52%);
+   }
+
+   100%{
+      transform: translate(-50%,-47%);
+   }
+
+}

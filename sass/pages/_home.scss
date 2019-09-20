@@ -1,4 +1,19 @@
 
+
+.static-logo{
+   z-index:1000;
+   position: fixed;
+   left:3rem;
+   top:3rem;
+   height: 10rem;
+   width:12rem;
+   *{
+      width:100%;
+      height:100%;
+   }
+
+}
+
 section{
 
    height: 50vh;
@@ -9,4 +24,20 @@ section{
    }
 
 
+}
+
+.quote{
+   
+   padding: 10rem 20rem;
+   
+   &__h2{
+     //font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      display:block;
+      margin: 0 auto;
+      &__span{
+         display:block;
+         margin-top: 5rem;
+      }
+   }
+ 
 }

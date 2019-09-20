@@ -21,10 +21,21 @@
 
  h1,h2,h3,h4{
    font-family: UnicornPop;
+   text-transform: uppercase;
    color:black;
    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: black;
+   -webkit-text-fill-color: red;
+   line-height: .9;
+ }
+
+ h1{
+  font-size: 8rem;
+ }
+
+ h2{
+  font-size: 5rem;
  }
 
 
