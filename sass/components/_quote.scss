@@ -1,0 +1,13 @@
+.quote{
+   height: auto;
+   padding:10rem 0;
+   &__h2{
+      display: inline-block;  
+      padding: 0 30%;
+      &__span{
+         display:block;
+         margin-top: 5rem;
+      }
+   }
+ 
+}

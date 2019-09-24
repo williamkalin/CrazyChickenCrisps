@@ -16,28 +16,8 @@
 
 section{
 
-   height: 50vh;
-
-   &:nth-child(even){
-
-      background-color: $color-primary-2;
-   }
-
+   height: 80vh;
+   background-color: $color-primary-1;
 
 }
 
-.quote{
-   
-   padding: 10rem 20rem;
-   
-   &__h2{
-     //font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      display:block;
-      margin: 0 auto;
-      &__span{
-         display:block;
-         margin-top: 5rem;
-      }
-   }
- 
-}

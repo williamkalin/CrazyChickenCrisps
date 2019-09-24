@@ -1,0 +1,59 @@
+.lawyer-chips{
+
+
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   height: auto;
+   padding: 10rem 0;
+
+   &__container-1{
+      width:55rem;
+      height: 55rem;
+      position: relative;
+      // margin-left: -20rem;
+
+      
+     *{
+      position: absolute;
+      top:0;
+      left:0;
+   }
+
+      &__lawyer{
+         height: 70%;
+         top:20rem;
+      }
+
+      // &__chatbox{
+      //    top:5rem;
+      //    left:23rem;
+      // }
+
+      &__p{
+         width:5rem;
+         top:17rem;
+         left:35rem;
+      }
+
+   }
+
+   &__container-2{
+      
+      position:relative;
+
+      &__p{
+         position:absolute;
+    
+        
+      }
+   
+      &__chips2{
+         animation: upanddown 4s infinite;
+      }
+
+   }
+
+
+
+}

@@ -1,0 +1,71 @@
+.eggsmash{
+  
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   height: auto;
+   padding: 10rem 0;
+
+   &__p{
+      display:block;
+      width: 30vw;
+     
+
+   }
+
+   &__container{
+      height:40rem;
+      width:40rem;
+      position:relative;
+      margin-left: 10rem;
+      
+      
+
+     *{
+        position: absolute;
+        top:0;
+        left:0;
+     }
+
+   //   &__backgroundeggs{
+     
+   //   }
+
+     &__frontalegg{
+      animation: pulsatee-click 2s linear infinite;
+      cursor: pointer;
+     }
+
+     &__hammer{
+      transform: scale(0);
+     }
+
+     &__eggshells{
+        visibility: hidden;
+        z-index:2;
+     }
+
+
+
+     &__arrow{
+        left: 20%;
+        top:80%;
+        height:16rem;
+        width:16rem;
+        transform: rotate(-90deg);
+     }
+
+     &__clickme{
+        left:-2rem;
+        top:105%;
+     }
+
+     &__aftertext{
+      visibility: hidden;
+     }
+
+
+   }
+
+}
+

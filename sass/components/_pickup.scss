@@ -1,0 +1,59 @@
+.pickup{
+  
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   height: auto;
+   padding: 10rem 0;
+
+   &__p{
+      display:block;
+      width: 30vw;
+      margin-left:5rem;
+
+   }
+
+   &__container{
+      height:40rem;
+      width:40rem;
+      position:relative;
+      margin-right: 15rem;
+
+     *{
+        position: absolute;
+        top:0;
+        left:0;
+     }
+
+     &__shellrow{
+        cursor: pointer;
+      animation: pulsatee-click 2s linear infinite;
+     }
+
+     &__shellpickup{
+      transform:scale(0);
+     }
+
+     &__arrow{
+        right: -5rem;
+        left:auto;
+        height:16rem;
+        width:16rem;
+        transform: rotate(90deg);
+     }
+
+     &__clickme{
+        left:auto;
+        right:-15rem;
+        top:2rem;
+     }
+
+     &__aftertext{
+      visibility: hidden;
+     }
+
+
+   }
+
+}
+
