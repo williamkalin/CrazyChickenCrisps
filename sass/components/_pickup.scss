@@ -6,10 +6,18 @@
    height: auto;
    padding: 10rem 0;
 
+   @media only screen and (max-width:900px) {
+      flex-direction: column;
+     
+      };
+
    &__p{
       display:block;
       width: 30vw;
-      margin-left:5rem;
+
+      @media only screen and (max-width:900px) {
+         width: 70vw;
+         }; 
 
    }
 
@@ -18,6 +26,11 @@
       width:40rem;
       position:relative;
       margin-right: 15rem;
+
+
+      @media only screen and (max-width:900px) {
+         margin-top:8rem;
+         }; 
 
      *{
         position: absolute;
@@ -49,7 +62,9 @@
      }
 
      &__aftertext{
+       top:-5rem;
       visibility: hidden;
+      margin-left:5rem;
      }
 
 

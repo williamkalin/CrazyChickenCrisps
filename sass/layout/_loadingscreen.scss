@@ -5,7 +5,7 @@
    height:100vh;
    z-index: 10000;
    overflow:hidden;
-   background-color: $color-primary-2;
+   background-color: $color-primary-1;
    
 
 
@@ -13,6 +13,12 @@
      
       width:80rem;
       height:80rem;
+
+      @media only screen and (max-width:550px) {
+          
+      width:40rem;
+      height:40rem;
+         }; 
 
       @include centerHorizontalVertical;
       &__svg{

@@ -115,15 +115,24 @@ h2 {
   align-items: center;
   height: auto;
   padding: 10rem 0; }
+  @media only screen and (max-width: 900px) {
+    .carton {
+      flex-direction: column; } }
   .carton__p {
     display: block;
     width: 30vw;
     margin-left: 5rem; }
+    @media only screen and (max-width: 900px) {
+      .carton__p {
+        width: 70vw; } }
   .carton__container {
     height: 40rem;
     width: 40rem;
     position: relative;
-    margin-right: 10rem; }
+    margin-right: 5rem; }
+    @media only screen and (max-width: 900px) {
+      .carton__container {
+        margin-top: 10rem; } }
     .carton__container * {
       position: absolute;
       top: 0;
@@ -150,19 +159,46 @@ h2 {
     display: inline-block;
     margin-top: 6rem;
     margin-left: 6rem;
-    width: 45vw; }
-    .intro__h2 span {
-      font-size: 7rem;
-      display: inline-block;
-      -webkit-text-stroke-width: 4px;
-      animation: upanddown 1s ease-in-out infinite; }
+    width: 45vw;
+    position: relative; }
+    @media only screen and (max-width: 900px) {
+      .intro__h2 {
+        text-align: center; } }
+    @media only screen and (max-width: 550px) {
+      .intro__h2 {
+        width: 70vw; } }
+    @media only screen and (max-width: 950px) {
+      .intro__h2 {
+        margin-left: 0;
+        display: block;
+        margin: 0 auto; } }
+  .intro__h1 {
+    font-size: 7rem;
+    margin-left: 6rem;
+    -webkit-text-stroke-width: 4px;
+    animation: upanddown 1s ease-in-out infinite; }
+    @media only screen and (max-width: 950px) {
+      .intro__h1 {
+        margin-top: 5rem;
+        margin-left: 0;
+        text-align: center; } }
+    @media only screen and (max-width: 550px) {
+      .intro__h1 {
+        font-size: 6rem; } }
   .intro__story1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 10rem; }
+    @media only screen and (max-width: 900px) {
+      .intro__story1 {
+        flex-direction: column; } }
     .intro__story1__p {
       width: 40vw; }
+      @media only screen and (max-width: 900px) {
+        .intro__story1__p {
+          width: 70vw;
+          margin-bottom: 5rem; } }
     .intro__story1__container {
       border: 2rem solid black;
       border-radius: 5px;
@@ -178,6 +214,9 @@ h2 {
   .quote__h2 {
     display: inline-block;
     padding: 0 30%; }
+    @media only screen and (max-width: 900px) {
+      .quote__h2 {
+        padding: 0 15%; } }
     .quote__h2__span {
       display: block;
       margin-top: 5rem; }
@@ -188,14 +227,23 @@ h2 {
   align-items: center;
   height: auto;
   padding: 10rem 0; }
+  @media only screen and (max-width: 900px) {
+    .eggsmash {
+      flex-direction: column-reverse; } }
   .eggsmash__p {
     display: block;
     width: 30vw; }
+    @media only screen and (max-width: 900px) {
+      .eggsmash__p {
+        width: 70vw; } }
   .eggsmash__container {
     height: 40rem;
     width: 40rem;
     position: relative;
-    margin-left: 10rem; }
+    margin-left: 5rem; }
+    @media only screen and (max-width: 900px) {
+      .eggsmash__container {
+        margin-top: 5rem; } }
     .eggsmash__container * {
       position: absolute;
       top: 0;
@@ -226,15 +274,23 @@ h2 {
   align-items: center;
   height: auto;
   padding: 10rem 0; }
+  @media only screen and (max-width: 900px) {
+    .pickup {
+      flex-direction: column; } }
   .pickup__p {
     display: block;
-    width: 30vw;
-    margin-left: 5rem; }
+    width: 30vw; }
+    @media only screen and (max-width: 900px) {
+      .pickup__p {
+        width: 70vw; } }
   .pickup__container {
     height: 40rem;
     width: 40rem;
     position: relative;
     margin-right: 15rem; }
+    @media only screen and (max-width: 900px) {
+      .pickup__container {
+        margin-top: 8rem; } }
     .pickup__container * {
       position: absolute;
       top: 0;
@@ -255,7 +311,9 @@ h2 {
       right: -15rem;
       top: 2rem; }
     .pickup__container__aftertext {
-      visibility: hidden; }
+      top: -5rem;
+      visibility: hidden;
+      margin-left: 5rem; }
 
 .lawyer-chips {
   display: flex;
@@ -267,6 +325,10 @@ h2 {
     width: 55rem;
     height: 55rem;
     position: relative; }
+    @media only screen and (max-width: 950px) {
+      .lawyer-chips__container-1 {
+        display: none;
+        visibility: none; } }
     .lawyer-chips__container-1 * {
       position: absolute;
       top: 0;
@@ -278,12 +340,12 @@ h2 {
       width: 5rem;
       top: 17rem;
       left: 35rem; }
-  .lawyer-chips__container-2 {
-    position: relative; }
-    .lawyer-chips__container-2__p {
-      position: absolute; }
-    .lawyer-chips__container-2__chips2 {
-      animation: upanddown 4s infinite; }
+  .lawyer-chips__container-2__chips2 {
+    animation: upanddown 4s infinite; }
+    @media only screen and (max-width: 550px) {
+      .lawyer-chips__container-2__chips2 {
+        width: 40rem;
+        height: 40rem; } }
 
 .form-section {
   height: auto;
@@ -402,7 +464,7 @@ h2 {
   height: 100vh;
   z-index: 10000;
   overflow: hidden;
-  background-color: #f8c800; }
+  background-color: #f8f800; }
   .loadingscreen__svgs {
     width: 80rem;
     height: 80rem;
@@ -410,6 +472,10 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 550px) {
+      .loadingscreen__svgs {
+        width: 40rem;
+        height: 40rem; } }
     .loadingscreen__svgs__svg {
       position: absolute;
       width: 100%;
@@ -458,6 +524,15 @@ section {
 html {
   font-size: 62.5%;
   /* It is good practice to set the default html font size to a percentage since there is people who have set their default dont size to something bigger ( bad sight), and therefore using a relative measurement here we can make the entirepage ( since we are basing size on REM ) relative to the user specific needs */ }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
