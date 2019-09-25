@@ -1,0 +1,7 @@
+1. Make the footer look legit
+
+2. The app is not responsive enough for smaller screens.
+
+3. Remove smoothscrolling for smallscreens ( mobiles )
+
+4. Set up the formsubmit to netlifies built in submit system.
