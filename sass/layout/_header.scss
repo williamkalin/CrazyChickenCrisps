@@ -9,6 +9,12 @@
       
       width:85rem;
       height:85rem;
+
+      @media only screen and (max-width:450px) {
+          
+         width:60rem;
+         height:60rem;
+            }; 
       position:absolute;
       top:30rem;
       left:50%;

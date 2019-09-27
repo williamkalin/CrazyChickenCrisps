@@ -27,6 +27,10 @@
       position:relative;
       margin-right: 15rem;
 
+      @media only screen and (max-width:550px) {
+         margin-right: 4rem;
+         }; 
+
 
       @media only screen and (max-width:900px) {
          margin-top:8rem;
@@ -39,11 +43,21 @@
      }
 
      &__shellrow{
+      @media only screen and (max-width:550px) {
+         height:40rem;
+         width:40rem;
+         // margin-left:10rem;
+         }; 
         cursor: pointer;
       animation: pulsatee-click 2s linear infinite;
      }
 
      &__shellpickup{
+      @media only screen and (max-width:550px) {
+         height:40rem;
+         width:40rem;
+         // margin-right:10rem;
+         }; 
       transform:scale(0);
      }
 
@@ -53,12 +67,18 @@
         height:16rem;
         width:16rem;
         transform: rotate(90deg);
+        @media only screen and (max-width:550px) {
+         right: 3rem;
+         }; 
      }
 
      &__clickme{
         left:auto;
         right:-15rem;
         top:2rem;
+        @media only screen and (max-width:550px) {
+         right: -7rem;
+         }; 
      }
 
      &__aftertext{

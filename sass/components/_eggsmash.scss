@@ -37,20 +37,35 @@
         left:0;
      }
 
-   //   &__backgroundeggs{
-     
-   //   }
+      &__backgroundeggs{
+         @media only screen and (max-width:550px) {
+            height:40rem;
+            width:40rem;
+            }; 
+      }
 
      &__frontalegg{
+      @media only screen and (max-width:550px) {
+         height:40rem;
+         width:40rem;
+         }; 
       animation: pulsatee-click 2s linear infinite;
       cursor: pointer;
      }
 
      &__hammer{
+      @media only screen and (max-width:550px) {
+         height:40rem;
+         width:40rem;
+         }; 
       transform: scale(0);
      }
 
      &__eggshells{
+      @media only screen and (max-width:550px) {
+         height:30rem;
+         width:30rem;
+         }; 
         visibility: hidden;
         z-index:2;
      }
