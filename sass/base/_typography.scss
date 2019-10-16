@@ -19,7 +19,7 @@
  
 
 
- h1,h2,h3,h4,p,label,button,textarea,input{
+ h1,h2,h3,h4,p,label,button,textarea,input,a{
    font-family: UnicornPop;
    text-transform: uppercase;
    color:black;
@@ -39,6 +39,10 @@ textarea,input{
 }
 
 p{
+  font-size: 4rem;
+}
+
+a{
   font-size: 4rem;
 }
 

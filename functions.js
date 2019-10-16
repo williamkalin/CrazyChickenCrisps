@@ -1,9 +1,16 @@
 import smoothscroll from "./smoothscroll.js";
 
 // window.scrollTo(0, 0);
-new smoothscroll();
 
 
+if (innerWidth >= 1024) {
+   console.log("smoth")
+   new smoothscroll();
+} else {
+   document.querySelector(".lerp-static").style.overflow = "inherit";
+}
+
+console.log(innerWidth);
 ///////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 //////////////////LOADING SCREEN
