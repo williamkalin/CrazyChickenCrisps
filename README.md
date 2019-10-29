@@ -8,7 +8,7 @@ A humoristic interactive promotional website for a fake brand of egg-shell based
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - HTML
-* [Maven](https://maven.apache.org/) - CSS
-* [ROME](https://rometools.github.io/rome/) - JAVASCRIPT
+*  HTML
+*  CSS
+*  JAVASCRIPT
 
