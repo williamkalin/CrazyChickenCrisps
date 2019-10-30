@@ -12,6 +12,6 @@ A humoristic interactive promotional website for a fake brand of egg-shell based
 *  CSS
 *  JAVASCRIPT
 
-[Live verison of website](https://crazychickencrisps.netlify.com/) 
+[Live version of website](https://crazychickencrisps.netlify.com/) 
  
 [My personal website](https://williamkalin.netlify.com/)
